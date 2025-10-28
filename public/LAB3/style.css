@@ -1,0 +1,205 @@
+/* ---------- GERAL ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* ---------- CABEÇALHO ---------- */
+header {
+    background-color: bisque;
+    border: 2px solid indigo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    min-height: 120px;
+}
+
+header h1 {
+    color: darkgreen;
+    font-size: 28px;
+    margin: 0;
+}
+
+.imagem1 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.imagem2 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+header img {
+    height: 100px;
+}
+
+/* ---------- MENU ---------- */
+.menu {
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.menu p {
+    margin: 0;
+    cursor: pointer;
+}
+
+/* ---------- CONTEÚDO ---------- */
+.conteudo {
+    padding: 20px;
+}
+
+.conteudo h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.conteudo p {
+    font-size: 20pt;
+    text-align: justify;
+    color: darkred;
+}
+
+/* ---------- LIVROS ---------- */
+.Livros {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Livros h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.Livros img {
+    width: 200px;
+    height: auto;
+}
+
+/* ---------- VÍDEOS ---------- */
+.Videos {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Videos p {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ---------- TABELA ---------- */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px dashed red;
+}
+
+th, td {
+    border: 1px solid indigo;
+    padding: 10px 15px;
+}
+
+/* ---------- LINKS ---------- */
+.links {
+    background-color: yellow;
+    padding: 12px;
+    margin: 20px auto;
+    width: calc(100% - 40px);
+    max-width: 1100px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.links > p {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-weight: bold;
+    color: indigo;
+}
+
+.links-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sites ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.sites li {
+    margin: 5px 0;
+    color: indigo;
+    font-weight: bold;
+}
+
+.w3links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: right;
+}
+
+.w3links a {
+    text-decoration: none;
+    color: indigo;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .links-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .w3links {
+        text-align: left;
+        align-items: flex-start;
+    }
+}
+
+/* ---------- RODAPÉ ---------- */
+footer.rodape {
+    margin-top: 20px;
+    background-color: bisque;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Comic Sans MS";
+    font-size: 15pt;
+    color: indigo;
+}
+
+footer.rodape p {
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+footer.rodape img {
+    height: 60px;
+}
