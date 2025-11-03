@@ -1,9 +1,11 @@
 body {
-  background-color: #f0f0f0; 
+    background-color: #f0f0f0; 
   font-family: Arial, sans-serif;
   display: flex;             
+  flex-direction: column; /* empilha elementos verticalmente */
   justify-content: center;
   align-items: center;
+  gap: 12px;
   height: 100vh;
   margin: 0;
 }
